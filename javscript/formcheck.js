@@ -69,7 +69,7 @@ function testcovid19()
             html : true,
             title: "<div>" + text + "</div>",
             html : "<img src='"+'https://www.flaticon.com/svg/vstatic/svg/2927/2927499.svg?token=exp=1612361543~hmac=e58102f30aceee44ad1c2190f0ae431e'+"' style='width:150px;'>",
-            icon: "success",
+            icon: "error",
         });
     }
     function survival()
