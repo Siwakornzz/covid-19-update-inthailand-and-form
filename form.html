@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormCovid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/3461/3461577.svg?token=exp=1612363342~hmac=161d6ddb21ef0e895222d078dd561213">
+    <script src="javscript/formcheck.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Covid-19</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">รายงานสถานการณ์ Covid-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="form.html">แบบประเมินความเสี่ยงในการติดเชื้อ Covid-19</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+
+        <form >
+            <center><div class="formcovidtest">
+                <div class="card text-center">
+                    <div class="card-header">
+                        แบบประเมินความเสี่ยงในการติดเชื้อ Covid-19
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-title">(1) ข้อมูลทั่วไป </p>
+                        <p class="card-text">จังหวัด </p>
+                        <select class="form-select" aria-label="Default select example" required >
+                            <option value="" selected>--------- เลือกจังหวัด --------- </option>
+                                <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                                <option value="กระบี่">กระบี่ </option>
+                                <option value="กาญจนบุรี">กาญจนบุรี </option>
+                                <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                                <option value="กำแพงเพชร">กำแพงเพชร </option>
+                                <option value="ขอนแก่น">ขอนแก่น</option>
+                                <option value="จันทบุรี">จันทบุรี</option>
+                                <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                                <option value="ชัยนาท">ชัยนาท </option>
+                                <option value="ชัยภูมิ">ชัยภูมิ </option>
+                                <option value="ชุมพร">ชุมพร </option>
+                                <option value="ชลบุรี">ชลบุรี </option>
+                                <option value="เชียงใหม่">เชียงใหม่ </option>
+                                <option value="เชียงราย">เชียงราย </option>
+                                <option value="ตรัง">ตรัง </option>
+                                <option value="ตราด">ตราด </option>
+                                <option value="ตาก">ตาก </option>
+                                <option value="นครนายก">นครนายก </option>
+                                <option value="นครปฐม">นครปฐม </option>
+                                <option value="นครพนม">นครพนม </option>
+                                <option value="นครราชสีมา">นครราชสีมา </option>
+                                <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                                <option value="นครสวรรค์">นครสวรรค์ </option>
+                                <option value="นราธิวาส">นราธิวาส </option>
+                                <option value="น่าน">น่าน </option>
+                                <option value="นนทบุรี">นนทบุรี </option>
+                                <option value="บึงกาฬ">บึงกาฬ</option>
+                                <option value="บุรีรัมย์">บุรีรัมย์</option>
+                                <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                                <option value="ปทุมธานี">ปทุมธานี </option>
+                                <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                                <option value="ปัตตานี">ปัตตานี </option>
+                                <option value="พะเยา">พะเยา </option>
+                                <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                                <option value="พังงา">พังงา </option>
+                                <option value="พิจิตร">พิจิตร </option>
+                                <option value="พิษณุโลก">พิษณุโลก </option>
+                                <option value="เพชรบุรี">เพชรบุรี </option>
+                                <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                                <option value="แพร่">แพร่ </option>
+                                <option value="พัทลุง">พัทลุง </option>
+                                <option value="ภูเก็ต">ภูเก็ต </option>
+                                <option value="มหาสารคาม">มหาสารคาม </option>
+                                <option value="มุกดาหาร">มุกดาหาร </option>
+                                <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                                <option value="ยโสธร">ยโสธร </option>
+                                <option value="ยะลา">ยะลา </option>
+                                <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                                <option value="ระนอง">ระนอง </option>
+                                <option value="ระยอง">ระยอง </option>
+                                <option value="ราชบุรี">ราชบุรี</option>
+                                <option value="ลพบุรี">ลพบุรี </option>
+                                <option value="ลำปาง">ลำปาง </option>
+                                <option value="ลำพูน">ลำพูน </option>
+                                <option value="เลย">เลย </option>
+                                <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                                <option value="สกลนคร">สกลนคร</option>
+                                <option value="สงขลา">สงขลา </option>
+                                <option value="สมุทรสาคร">สมุทรสาคร </option>
+                                <option value="สมุทรปราการ">สมุทรปราการ </option>
+                                <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                                <option value="สระแก้ว">สระแก้ว </option>
+                                <option value="สระบุรี">สระบุรี </option>
+                                <option value="สิงห์บุรี">สิงห์บุรี </option>
+                                <option value="สุโขทัย">สุโขทัย </option>
+                                <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                                <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                                <option value="สุรินทร์">สุรินทร์ </option>
+                                <option value="สตูล">สตูล </option>
+                                <option value="หนองคาย">หนองคาย </option>
+                                <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                                <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                                <option value="อุดรธานี">อุดรธานี </option>
+                                <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                                <option value="อุทัยธานี">อุทัยธานี </option>
+                                <option value="อุบลราชธานี">อุบลราชธานี</option>
+                                <option value="อ่างทอง">อ่างทอง </option>
+                                <option value="อื่นๆ">อื่นๆ</option>
+                        </select>
+                        <hr>
+                            <p> เพศ </p>
+                            <input type="radio" id="male" name="gender"  value="male">
+                            <label for="male">ชาย</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">หญิง</label><br>
+                        <hr>
+                            <p> อายุ </p>
+                            <input type="text" class="form-control" value="" id="age" required> 
+                        <hr>
+                            <p> กลุ่มบุคลากร </p>
+                            <input type="radio" id="healthpersonal" name ="personal"  value = "2" > 
+                            <label for="healthpersonal"> บุคลากรสาธารณสุข </label><br>
+                            <input type="radio" id="covid19" name="personal" value = "3" > 
+                            <label for="covid19"> บุคลากรผู้ร่วมปฏิบัติงานต้านภัย COVID-19 </label> <br>
+                            <input type="radio" id="personals" name ="personal" value = "1" > 
+                            <label for="personals"> ประชาชน </label><br>
+
+                        <hr>
+                        <p class="card-title">(2) ข้อมูลการสัมผัสโรค </p>
+
+                        <p class="card-text">1. ท่านมีประวัติเดินทางไปต่างประเทศ หรือพื้นที่ ที่มีการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19) <br> &nbsp;&nbsp;&nbsp;ในช่วงเวลา 14 วัน ก่อนหน้านี้ ใช่หรือไม่ ?<br>
+                            <input type="radio" id="yes" name="choise1" value ="1"  > ใช่ <br>
+                            <input  type="radio" id ="no" name="choise1" value ="0" > ไม่ใช่
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">2. ท่านสัมผัสใกล้ชิดกับประชาชนที่มาจากพื้นที่ที่มีรายงานการระบาดต่อเนื่องของโรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19) ใช่หรือไม่ ?<br>
+                            <input type="radio" id="yes" name="choise2" value ="1"  > ใช่ <br>
+                            <input  type="radio" id ="no" name="choise2" value ="0" > ไม่ใช่
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text"> 3. ท่านมีประวัติใกล้ชิดหรือสัมผัสกับผู้ป่วยเข้าข่ายหรือยืนยันโรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19) ใช่หรือไม่ ?<br>
+                            <input type="radio" id="yes" name="choise3" value ="1"  > ใช่ <br>
+                            <input  type="radio" id ="no" name="choise3" value ="0" > ไม่ใช่
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text" > 4. ท่านหรือบุคคลใกล้ชิดเข้าร่วมกิจกรรมที่มีผู้ชุมนุมเกิน 100 คน ในช่วงเวลา 14 วัน ก่อนหน้านี้ ใช่หรือไม่ ?<br>
+                            <input type="radio" id="yes" name="choise4" value ="1"  > ใช่ <br>
+                            <input  type="radio" id ="no" name="choise4" value ="0" > ไม่ใช่
+                        </p>
+
+                        <hr>
+                        
+                        <p class="card-title">(3) ข้อมูลอาการ </p>
+                        <p style="color : red"> เลือกคำตอบที่ตรงกับอาการของท่านมากที่สุด !!</p>
+
+                        <div class="form-check" >
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"  name="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              มีไข้ (37.5 oC ขึ้นไป)  
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="flexCheckDefault" >
+                            <label class="form-check-label" for="flexCheckDefault">
+                                ไอ
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"  name="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                               มีน้ำมูก
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="flexCheckDefault" >
+                            <label class="form-check-label" for="flexCheckDefault">
+                                เจ็บคอ 
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="flexCheckDefault" >
+                            <label class="form-check-label" for="flexCheckDefault">
+                                 หายใจเร็ว หรือ หายใจลำบาก หรือ หายใจไม่สะดวก
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="flexCheckDefault" >
+                            <label class="form-check-label" for="flexCheckDefault">
+                                จมูกไม่ได้กลิ่น
+                            </label>
+                            <br>
+
+                            <input class="form-check-input" type="checkbox" value="0" id="flexCheckDefault" name="flexCheckDefault" >
+                            <label class="form-check-label" for="flexCheckDefault">
+                                 ไม่มีอาการข้างต้น
+                            </label>
+                            <br>
+
+                            <hr>
+                          </div>
+                            
+                    </div>
+                            <center><button type="button" onclick="testcovid19()" class="btn btn-outline-primary" id="btnsubmit"> Submit </button> </center> 
+                     
+                    <div class="card-footer text-muted">
+                        Special thanks : BornToDev & kidkarnmai
+                    </div>
+                </div>
+            </div></center>
+        </form>
+
+</body>
+</html>

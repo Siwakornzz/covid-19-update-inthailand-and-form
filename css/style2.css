@@ -1,0 +1,32 @@
+*
+{
+    font-family : "Athiti", sans-serif;
+    font-weight: bold;
+}
+
+.formcovidtest
+{
+    margin-top : 30px;
+    width : 50%;
+}
+.card-body
+{
+    text-align : left;
+    margin-left : 40px;
+}
+
+.card-title 
+{
+    font-weight: bold;
+}
+.card-text
+{
+    margin-top : 20px;
+}
+
+#btnsubmit
+{
+    width : 60%;
+    text-align : center;
+    margin-bottom : 50px;
+}

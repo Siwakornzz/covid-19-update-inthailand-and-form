@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <script src="javscript/covid.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/3461/3461577.svg?token=exp=1612363342~hmac=161d6ddb21ef0e895222d078dd561213">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    
+</head>
+<body onload = show_table()>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Covid-19</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">รายงานสถานการณ์ Covid-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">แบบประเมินความเสี่ยงในการติดเชื้อ Covid-19</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <center> <div class="covidform">
+        <div class="card text-center" style="width :90%">
+            <div class="card-header">
+              รายงานสถานการณ์ Covid-19
+              <p>อัพเดทข้อมูลล่าสุด : <span id="date"> </span></p>
+            </div>
+
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.flaticon.com/svg/vstatic/svg/2927/2927614.svg?token=exp=1612340367~hmac=329d79565118459f0aa1cb19d20161b0" class="card-img-top" alt="infection" id="infection">
+                                <div class="card-body">
+                                  <p class="card-title"> ผู้ติดเชื้อสะสม </p>
+                                  <h3 id="infections"> </h3>
+                                  <p> เพิ่มขึ้น <span id="newconfirm"> </span></p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.flaticon.com/svg/vstatic/svg/2927/2927705.svg?token=exp=1612341432~hmac=5b49e0bf9c326f00c339c8a456516440" class="card-img-top" alt="recovered" id="recovered">
+                                <div class="card-body">
+                                  <p class="card-title"> ผู้ติดเชื้อที่รักษาหายแล้ว </p>
+                                  <h3 id="recovereds"> </h3>
+                                  <p> เพิ่มขึ้น <span id="newrecovered"> </span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.flaticon.com/svg/vstatic/svg/2927/2927753.svg?token=exp=1612342816~hmac=6291e53f31add4cc6f69074141add46b" class="card-img-top" alt="hospitalized" id="hospitalized">
+                                <div class="card-body">
+                                  <p class="card-title"> ผู้ติดเชื้อที่กำลังรักษาตัวอยู่ในโรงพยาบาล </p>
+                                  <h3 id="hospitalizeds"> </h3>
+                                  <p> เพิ่มขึ้น <span id="newhospitalized"> </span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.flaticon.com/svg/vstatic/svg/2927/2927555.svg?token=exp=1612343173~hmac=bb40846a5d66d24077593cc383f6e763" class="card-img-top" alt="death" id="death">
+                                <div class="card-body">
+                                  <p class="card-title"> ผู้ติดเชื้อที่เสียชีวิต </p>
+                                  <h3 id="deaths"> </h3>
+                                  <p> เพิ่มขึ้น <span id="newdeath"> </span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="card-footer text-muted">
+              Special thanks : BornToDev & kidkarnmai
+          </div>
+        </div>
+          
+
+      </div></center>
+    
+</body>
+</html>
