@@ -89,7 +89,7 @@ function testcovid19()
     {
         risky()
     }
-    else if (result > 0 && result <= 5) {
+    else if (result > 2 && result <= 5) {
         warningtoinfected()
     }
     else {
