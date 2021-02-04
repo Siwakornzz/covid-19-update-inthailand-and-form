@@ -3,6 +3,12 @@
     font-family : "Athiti", sans-serif;
     font-weight: bold;
 }
+body
+{
+    background-image : url("https://www.lexxion.eu/wp-content/uploads/2020/04/StateAidHub_Corona-Update-Poland.png");
+    background-attachment: fixed;
+    max-width: 100%;
+}
 
 .formcovidtest
 {
@@ -29,4 +35,30 @@
     width : 60%;
     text-align : center;
     margin-bottom : 50px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+    .formcovidtest
+    {
+        width : 80%;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .formcovidtest
+    {
+        width : 70%;
+    }
+}
+
+@media only screen 
+and (min-width : 1224px) {
+    .formcovidtest
+    {
+        width : 50%;
+    }
 }
