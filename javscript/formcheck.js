@@ -54,7 +54,7 @@ function testcovid19()
         swal.fire({
             html : true,
             title: "<div>" + text + "</div>",
-            html : "<img src='"+'https://www.flaticon.com/svg/vstatic/svg/2927/2927633.svg?token=exp=1612361543~hmac=a424370b71b393146b9bf93e12370ffa'+"' style='width:150px;'>",
+            html : '<img src="./asset/warning.svg" style="width:150px">',
             icon: "warning",
            
           });
@@ -68,7 +68,7 @@ function testcovid19()
         swal.fire({
             html : true,
             title: "<div>" + text + "</div>",
-            html : "<img src='"+'https://www.flaticon.com/svg/vstatic/svg/2927/2927499.svg?token=exp=1612361543~hmac=e58102f30aceee44ad1c2190f0ae431e'+"' style='width:150px;'>",
+            html : '<div> <img src="./asset/danger.svg" style="width:150px"> </div>',
             icon: "error",
         });
     }
@@ -80,7 +80,7 @@ function testcovid19()
         swal.fire({
             html : true,
             title: "<div>" + text + "</div>",
-            html : "<img src='"+'https://www.flaticon.com/svg/vstatic/svg/2927/2927764.svg?token=exp=1612360622~hmac=5b94c88e99aa62ca0d472681996d3347'+"' style='width:150px;'>",
+            html : '<img src="./asset/safe.svg" style="width:150px">',
             icon: "success",
            
           });

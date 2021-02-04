@@ -23,24 +23,6 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById('newhospitalized').innerHTML = newhospitalized + " ราย "
         document.getElementById('deaths').innerHTML = Deaths + " ราย "
         document.getElementById('newdeath').innerHTML = NewDeaths + " ราย "
-
-        let txt_html = '<table border="5">';
-        txt_html += '<tr>'+
-            '<th>Confirmed</th>'+
-            '<th>Recovered</th>'+
-            '<th>Hospitalized</th>'+
-            
-            '</tr>';
-   
-        txt_html += '<tr>'+
-            '<th>'+objs.Confirmed+'</th>'+
-            '<th>'+objs.Recovered+'</th>'+
-            '<th>'+objs.Hospitalized+'</th>'+
-            
-            '</tr>';
-
-        txt_html += '</table>'
-        document.getElementById('tbl_show').innerHTML=txt_html;
     }
 };
 xmlhttp.open("GET", "https://covid19.th-stat.com/api/open/today", true);
